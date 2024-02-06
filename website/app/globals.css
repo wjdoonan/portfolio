@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#jd {
+  color: rgb(188, 87, 184);
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+@keyframes titleAnimate {
+  0% {
+    opacity: 10%;
+    background-image: linear-gradient(to right, rgb(16 185 129) 50%, #ec4899);
+  }
+
+  10% {
+    background-image: linear-gradient(to right, #ec4899 10%, rgb(16 185 129) 50%, #ec4899);
+  }
+
+  20% {
+    background-image: linear-gradient(to right, #ec4899 20%, rgb(16 185 129) 70%, #ec4899);
+  }
+
+  30% {
+    background-image: linear-gradient(to right, #ec4899 30%, rgb(16 185 129) 80%, #ec4899);
+  }
+
+  40% {
+    background-image: linear-gradient(to right, #ec4899 40%, rgb(16 185 129) 90%, #ec4899);
+  }
+
+  50% {
+    background-image: linear-gradient(to right, #ec4899 50%, rgb(16 185 129));
+  }
+
+  60% {
+    background-image: linear-gradient(to right, rgb(16 185 129) 10%, #ec4899 50%, rgb(16 185 129));
+  }
+
+  70% {
+    opacity: 100%;
+    background-image: linear-gradient(to right, rgb(16 185 129) 20%, #ec4899 60%, rgb(16 185 129));
+  }
+
+  80% {
+    background-image: linear-gradient(to right, rgb(16 185 129) 30%, #ec4899 70%, rgb(16 185 129));
+  }
+
+  80% {
+    background-image: linear-gradient(to right, rgb(16 185 129) 40%, #ec4899 80%, rgb(16 185 129));
+  }
+
+  90% {
+    background-image: linear-gradient(to right, rgb(16 185 129) 50%, #ec4899 90%, rgb(16 185 129));
+  }
+
+  100% {
+    background-image: linear-gradient(to right, rgb(16 185 129) 50%, #ec4899 100%);
+  }
+}
+
+#nameTitle {
+  animation: titleAnimate 1s 1;
+  background-image: linear-gradient(to right, rgb(16 185 129) 50%, #ec4899 100%);
+}
